@@ -1,0 +1,129 @@
+/* PlayGamesSection.css */
+.play-games-container {
+    padding: 20px;
+    background-color: black;
+    color: white;
+  }
+  
+  .play-games-container h2 {
+    margin-bottom: 15px;
+  }
+  
+  .category-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 5px;
+  }
+  
+  .category-buttons::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .category-button {
+    background-color: #3f37c9;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9em;
+    flex-shrink: 0;
+  }
+  
+  .category-button.active {
+    background-color: #4895ef;
+  }
+  
+  .category-button.image-button {
+    padding: 0;
+    width: auto;
+  }
+  
+  .category-button.image-button img.button-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: inherit;
+  }
+  
+  .category-button.image-button span.close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7em;
+    margin-left: 0;
+  }
+  
+  .category-button:not(.image-button) .icon {
+    font-size: 1em;
+  }
+  
+  .category-button.image-button > span {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    background-color: black;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 0.8em;
+  }
+  
+  .game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+  }
+  
+  .game-card {
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0; /* Remove padding from game-card */
+  }
+  
+  .game-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 0; /* Remove bottom margin */
+    aspect-ratio: 1 / 1; /* Maintain 1:1 aspect ratio */
+    object-fit: cover; /* Cover the area, potentially cropping */
+  }
+  
+  .game-card h3 {
+    font-size: 1em;
+    text-align: center;
+    margin: 0;
+    padding-top: 8px; /* Add padding above heading */
+    color: white;
+  }
+  
+  @media (max-width: 700px) {
+    .game-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .game-grid {
+      grid-template-columns: 1fr;
+    }
+  }

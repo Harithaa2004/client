@@ -1,0 +1,46 @@
+/* NavBar.css */
+.bottom-navbar {
+    background-color: #1a1a2e;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    margin-top: 50px;
+    padding: 5px 20px; /* Increase vertical padding for more spacing */
+  }
+  
+  .nav-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+  
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav-icon {
+    width: 50px; /* Make the icons bigger */
+    height: auto;
+    margin-bottom: 8px; /* Increase space for larger text */
+  }
+  
+  .nav-item span {
+    font-size: 1em; /* Make the text bigger */
+  }
+  
+  /* Optional: Style for active/selected item */
+  .nav-item.active .nav-icon {
+    filter: brightness(1.5);
+  }
+  
+  .nav-item.active span {
+    color: #a29bfe;
+  }

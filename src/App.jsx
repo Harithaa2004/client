@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import Header from './components/Header.jsx';
 import TournamentBanner from './components/TournamentBanner.jsx';
+import PlayGamesSection from './components/PlayGamesSection.jsx';
+import ComingSoonSection from './components/ComingSoonSection.jsx';
+import NavBar from './components/NavBar.jsx';
 import './App.css'
 
 function App() {
@@ -11,6 +14,9 @@ function App() {
       <Header />
       <main>
         <TournamentBanner/>
+        <PlayGamesSection />
+        <ComingSoonSection/>
+        <NavBar />
       </main>
     </div>
   )
