@@ -1,27 +1,27 @@
-/* ComingSoonSection.css */
+
 .coming-soon-container {
     padding: 20px;
-    background-color: black; /* Dark background */
-    color: #ccc; /* Muted text color */
+    background-color: black; 
+    color: #ccc; 
     margin-top: 20px;
-    border-radius: 8px; /* Optional */
+    border-radius: 8px; 
   }
   
   .coming-soon-container h2 {
     color: #eee;
     margin-bottom: 15px;
-    text-align: left; /* Align heading to the left */
+    text-align: left; 
   }
   
   .coming-soon-grid {
-    display: flex; /* Use flexbox for single item alignment */
-    flex-wrap: wrap; /* Allow wrapping if more items are added later */
+    display: flex; 
+    flex-wrap: wrap;
     gap: 15px;
-    justify-content: flex-start; /* Align to the left */
+    justify-content: flex-start;
   }
   
   .coming-soon-card {
-    background-color: black; /* Darker card background */
+    background-color: black; 
     border-radius: 8px;
     overflow: hidden;
     display: flex;
@@ -29,14 +29,14 @@
     align-items: center;
     padding: 20px;
     justify-content: center;
-    width: auto; /* Adjust width to content */
+    width: auto; 
   }
   
   .coming-soon-card img {
-    width: 150px; /* Adjust image size */
+    width: 150px; 
     height: auto;
-    opacity: 1; /* Keep image fully visible */
-    filter: grayscale(0%); /* Keep image in color */
+    opacity: 1; 
+    filter: grayscale(0%); 
     border-radius: 8px;
     margin-bottom: 10px;
   }

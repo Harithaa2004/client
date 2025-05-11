@@ -8,10 +8,9 @@
     width: 100%;
   }
   
-  .left-section .logo-image { /* Target the logo image specifically */
-    height: 40px; /* Adjust as needed */
-    width: auto; /* Maintain aspect ratio */
-    /* font-size: 1.5em; Remove this as it applies to text */
+  .left-section .logo-image { 
+    height: 40px; 
+    width: auto;
   }
   
   .right-section {
@@ -21,8 +20,8 @@
   }
   
   .icon {
-    height: 28px; /* Base size for icons */
-    width: auto; /* Maintain aspect ratio */
+    height: 28px; 
+    width: auto;
   }
   
   .icon:hover {
@@ -46,34 +45,17 @@
     object-fit: cover;
   }
   
-  /* Specific styles for leaderboard icon */
   .leaderboard-icon {
-    height: 32px; /* Adjust size as needed */
+    height: 32px; 
     width: auto;
   }
   
-  /* Specific styles for gift icon */
   .gift-icon {
-    height: 30px; /* Adjust size as needed */
+    height: 30px; 
     width: auto;
   }
   
-  /* You might not need these if you're directly styling the img with the class */
-  /* .leaderboard-container img {
-    width: 80px;
-    height: auto;
-  }
   
-  .gift-icon {
-    width: 35px;
-    height: auto;
-  }
-  
-  .profile-icon img {
-    width: 40px;
-    height: auto;
-    border-radius: 50%;
-  } */
   
   @media (max-width: 600px) {
     .header {
